@@ -1,6 +1,4 @@
-from ast import Lambda
 import json, requests, os
-from typing import Type
 
 # import our hidden keys
 secret = json.load(open("secret.json"))
