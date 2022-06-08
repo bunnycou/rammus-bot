@@ -24,8 +24,7 @@ for x in ddragon["data"]:
     ddChamps[ddragon["data"][x]["key"]] = x
 
 # get summoner name
-#summonerName = input("Summoner Name: ").strip().lower()
-summonerName = "bunnycou"
+summonerName = input("Summoner Name: ").strip().lower()
 
 # get account from summoner name
 account = json.loads(requests.get(f"https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/{summonerName}?api_key={key}").text)
