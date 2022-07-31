@@ -2,7 +2,7 @@ import json, requests, os
 
 # import our hidden keys
 secret = json.load(open("secret.json"))
-key = secret["api-key"]
+key = secret["riot-key"]
 
 
 # get json file of all champs from DataDragon
